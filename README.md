@@ -6,7 +6,7 @@ This lab practices programming with iterators.
 
 You will implement three relational algebra operators as iterators.  You are not required to edit most of the provided code files. **Note that there is a `FileManager.java` for opening and closing files, and `Tuple.java` has methods for reading and writing tuples from files.  Make use of these files!** Here are the three operators you have to implement:
 
-- In `TextFileScan.java complete `init()`, `next()`, and `close()` methods to create an operator called `TextFileScan` to scan a text file as a set of tuples. (Test file: `TestScan.java`) *(5 marks)*
+- In `TextFileScan.java` complete `init()`, `next()`, and `close()` methods to create an operator called `TextFileScan` to scan a text file as a set of tuples. (Test file: `TestScan.java`) *(5 marks)*
 
 - In `NestedLoopJoin.java` write the code to implement a tuple nested-loop join.  The general form of the iterator is in the query processing notes. (Test file: `TestNestedLoopJoin.java`) *(10 marks)*
 
