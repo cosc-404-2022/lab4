@@ -14,3 +14,7 @@ You will implement three relational algebra operators as iterators.  You are not
 marks)*
 
 - EXTRA CREDIT: Create from scratch the class `BlockNestedLoopJoin.java` to implement the block nested-loop join operator as an iterator. (Test file: `TestNestedBlockJoin.java`) *(Extra credit up to 10 marks)*
+
+## Submission
+
+The lab can be marked immediately by the professor or TA by showing the output of the JUnit tests and by a quick code review.  Otherwise, submit the URL of your GitHub repository on Canvas. **Make sure to commit and push your updates to GitHub.**
