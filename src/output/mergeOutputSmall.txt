@@ -1,7 +1,4 @@
 0	207	0	0	thisisatuple	0	206	0	0	thisisatuple	
-0	209	0	0	thisisatuple	0	206	0	0	thisisatuple	
-0	207	0	0	thisisatuple	0	208	0	0	thisisatuple	
-0	209	0	0	thisisatuple	0	208	0	0	thisisatuple	
 16	83	0	0	thisisatuple	16	83	0	0	thisisatuple	
 2172	87	0	0	thisisatuple	2172	87	0	0	thisisatuple	
 8174	11	0	0	thisisatuple	8174	11	0	0	thisisatuple	
@@ -110,18 +107,3 @@
 492468	63	0	0	thisisatuple	492468	63	0	0	thisisatuple	
 498904	85	0	0	thisisatuple	498904	85	0	0	thisisatuple	
 499483	15	0	0	thisisatuple	499483	15	0	0	thisisatuple	
-499483	211	0	0	thisisatuple	499483	15	0	0	thisisatuple	
-499483	213	0	0	thisisatuple	499483	15	0	0	thisisatuple	
-499483	215	0	0	thisisatuple	499483	15	0	0	thisisatuple	
-499483	15	0	0	thisisatuple	499483	210	0	0	thisisatuple	
-499483	211	0	0	thisisatuple	499483	210	0	0	thisisatuple	
-499483	213	0	0	thisisatuple	499483	210	0	0	thisisatuple	
-499483	215	0	0	thisisatuple	499483	210	0	0	thisisatuple	
-499483	15	0	0	thisisatuple	499483	212	0	0	thisisatuple	
-499483	211	0	0	thisisatuple	499483	212	0	0	thisisatuple	
-499483	213	0	0	thisisatuple	499483	212	0	0	thisisatuple	
-499483	215	0	0	thisisatuple	499483	212	0	0	thisisatuple	
-499483	15	0	0	thisisatuple	499483	214	0	0	thisisatuple	
-499483	211	0	0	thisisatuple	499483	214	0	0	thisisatuple	
-499483	213	0	0	thisisatuple	499483	214	0	0	thisisatuple	
-499483	215	0	0	thisisatuple	499483	214	0	0	thisisatuple	

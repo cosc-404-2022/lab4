@@ -36,15 +36,15 @@ public class TestNestedLoopJoin {
 	}	
    
 	@Test
-    public void testSmallJoin()
-	{   System.out.println("\n\nTesting small nested loop join."); 			
-		TextFileScan scanLeft = new TextFileScan(DATA_DIR+"smallInputLeft.txt", r);
-		TextFileScan scanRight = new TextFileScan(DATA_DIR+"smallInputRight.txt", r);
+    public void testMediumJoin()
+	{   System.out.println("\n\nTesting medium nested loop join."); 			
+		TextFileScan scanLeft = new TextFileScan(DATA_DIR+"mediumInputLeft.txt", r);
+		TextFileScan scanRight = new TextFileScan(DATA_DIR+"mediumInputRight.txt", r);
 		EquiJoinPredicate ep = new EquiJoinPredicate(new int[]{0}, new int[]{0}, EquiJoinPredicate.INT_KEY);
 		
 		NestedLoopJoin nloop = new NestedLoopJoin(new Operator[]{scanLeft,scanRight}, ep);
-		int count = TestScan.compareOperatorWithOutput(nloop, OUTPUT_DIR+"nestedOutputSmall.txt");		
-		assertEquals(count, 127);
+		int count = TestScan.compareOperatorWithOutput(nloop, OUTPUT_DIR+"nestedOutputMedium.txt");		
+		assertEquals(127, count);
 	}
    
 	@Test
@@ -57,6 +57,6 @@ public class TestNestedLoopJoin {
 		NestedLoopJoin nloop = new NestedLoopJoin(new Operator[]{scanLeft,scanRight}, ep);	
 
 		int count = TestScan.compareOperatorWithOutput(nloop, OUTPUT_DIR+"nestedOutputLarge.txt");		
-		assertEquals(count, 191);
+		assertEquals(191, count);
 	}	
 }

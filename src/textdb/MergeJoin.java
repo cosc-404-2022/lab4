@@ -4,7 +4,7 @@ package textdb;
 import java.io.*;
 
 /**
- * Contains code for performing a two-pass external merge join in iterator format.
+ * Contains code for performing an external merge join in iterator format.
  */
 public class MergeJoin extends Operator
 {

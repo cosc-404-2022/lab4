@@ -44,7 +44,7 @@ public class TestScan {
 	{   System.out.println("\n\nTesting text file scan."); 					
 		TextFileScan tblScan = new TextFileScan(DATA_DIR+"smallInputLeft.txt", r);
 		int count = compareOperatorWithOutput(tblScan, OUTPUT_DIR+"scanOutput.txt");		
-		assertEquals(count, 107);
+		assertEquals(103, count);
 	}
    
 	/**

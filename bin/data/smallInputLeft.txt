@@ -101,7 +101,3 @@
 228935 203 0 0 thisisatuple  
 228935 205 0 0  thisisatuple  
 0 207 0 0  thisisatuple  
-0 209 0 0  thisisatuple  
-499483 211 0 0 thisisatuple
-499483 213 0 0 thisisatuple
-499483 215 0 0 thisisatuple  

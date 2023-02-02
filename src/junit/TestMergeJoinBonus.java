@@ -17,7 +17,7 @@ import textdb.TextFileScan;
 /**
  * Tests merge join implementation.
  */
-public class TestMergeJoin {	
+public class TestMergeJoinBonus {	
     	
 	public static String DATA_DIR = "bin/data/";			// Change this if needed to indicate where the data and output directories are.
 	public static String OUTPUT_DIR = "bin/output/";
@@ -35,37 +35,36 @@ public class TestMergeJoin {
 		attrs[4] = new Attribute("text",Attribute.TYPE_STRING,100);
 
 		r = new Relation(attrs);
-	}	
-   
-	@Test
-    public void testTinyJoin()
-	{   
-		System.out.println("\n\nTesting tiny merge join.");
-		TextFileScan r1Scan= new TextFileScan(DATA_DIR+"tinyInputLeft.txt", r);
-		TextFileScan r2Scan = new TextFileScan(DATA_DIR+"tinyInputRight.txt", r);
-		SortComparator sorter = new SortComparator(new int[]{0}, new boolean[]{true});
-		EquiJoinPredicate ep = new EquiJoinPredicate(new int[]{0}, new int[]{0}, EquiJoinPredicate.INT_KEY);
-		MergeSort r1Sort = new MergeSort(r1Scan,2000, 10, sorter);
-		MergeSort r2Sort = new MergeSort(r2Scan,2000, 10, sorter);
-		MergeJoin mjoin = new MergeJoin(new Operator[]{r1Sort,r2Sort}, ep);					
-		
-		int count = TestScan.compareOperatorWithOutput(mjoin, OUTPUT_DIR+"mergeOutputTiny.txt");		
-		assertEquals(4, count);
-	}
+	}		
 	
 	@Test
-    public void testSmallJoin()
+    public void testMediumJoin()
 	{   
-		System.out.println("\n\nTesting small merge join.");
-		TextFileScan r1Scan= new TextFileScan(DATA_DIR+"smallInputLeft.txt", r);
-		TextFileScan r2Scan = new TextFileScan(DATA_DIR+"smallInputRight.txt", r);
+		System.out.println("\n\nTesting medium merge join.");
+		TextFileScan r1Scan= new TextFileScan(DATA_DIR+"mediumInputLeft.txt", r);
+		TextFileScan r2Scan = new TextFileScan(DATA_DIR+"mediumInputRight.txt", r);
 		SortComparator sorter = new SortComparator(new int[]{0}, new boolean[]{true});
 		EquiJoinPredicate ep = new EquiJoinPredicate(new int[]{0}, new int[]{0}, EquiJoinPredicate.INT_KEY);
 		MergeSort r1Sort = new MergeSort(r1Scan,2000, 10, sorter);
 		MergeSort r2Sort = new MergeSort(r2Scan,2000, 10, sorter);
 		MergeJoin mjoin = new MergeJoin(new Operator[]{r1Sort,r2Sort}, ep);					
 		
-		int count = TestScan.compareOperatorWithOutput(mjoin, OUTPUT_DIR+"mergeOutputSmall.txt");		
-		assertEquals(109, count);
+		int count = TestScan.compareOperatorWithOutput(mjoin, OUTPUT_DIR+"mergeOutputMedium.txt");		
+		assertEquals(127, count);
+	}
+   
+	@Test
+    public void testLargeJoin()
+	{   System.out.println("\n\nTesting large merge join."); 		
+		TextFileScan r1Scan= new TextFileScan(DATA_DIR+"largeInputLeft.txt", r);
+		TextFileScan r2Scan = new TextFileScan(DATA_DIR+"largeInputRight.txt", r);
+		SortComparator sorter = new SortComparator(new int[]{0}, new boolean[]{true});
+		EquiJoinPredicate ep = new EquiJoinPredicate(new int[]{0}, new int[]{0}, EquiJoinPredicate.INT_KEY);
+		MergeSort r1Sort = new MergeSort(r1Scan,2000, 10, sorter);
+		MergeSort r2Sort = new MergeSort(r2Scan,2000, 10, sorter);
+		MergeJoin mjoin = new MergeJoin(new Operator[]{r1Sort,r2Sort}, ep);
+				
+		int count = TestScan.compareOperatorWithOutput(mjoin, OUTPUT_DIR+"mergeOutputLarge.txt");		
+		assertEquals(191, count);
 	}	
 }

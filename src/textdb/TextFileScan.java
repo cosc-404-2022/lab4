@@ -3,7 +3,7 @@ package textdb;
 import java.io.*;
 
 /**
- * Performs a file scan in iterator form.  File is assumed to be on local hard drive in TEXT form.  
+ * Performs a file scan in iterator form.  File is assumed to be on disk in TEXT form.  
  */
 public class TextFileScan extends Operator
 {

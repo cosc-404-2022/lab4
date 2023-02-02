@@ -37,8 +37,8 @@ public class NestedLoopJoin extends Operator
 	public Tuple next() throws IOException
 	{
 		// TODO
-		//Implement next() portion of iterator to return the next joined tuple
-		//Use boolean to determine if tupleLeft joins with tupleRight with pred.isEqual(tupleLeft,tupleRight)
+		// Implement next() portion of iterator to return the next joined tuple
+		// Use boolean to determine if tupleLeft joins with tupleRight with pred.isEqual(tupleLeft,tupleRight)
 
 		// return outputJoinTuple(tupleLeft, tupleRight);
 		return null;
