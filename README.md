@@ -10,7 +10,7 @@ Implement three relational algebra operators as iterators.  You are not required
 
 - In `NestedLoopJoin.java` write the code to implement a tuple nested-loop join.  The general form of the iterator is in the query processing notes. (Test file: `TestNestedLoopJoin.java`) *(5 marks)*
 
-- In `MergeJoin.java`, implement the merge portion of a sort join (assume the inputs are already sorted).  You will have to design this iterator totally yourself. Assume that there cannot exist duplicate keys in either input (e.g. two 1's in left input). The tiny and small tests will pass as they have no duplicates. (Test file: `TestMergeJoin.java`) (10 marks) 
+- In `MergeJoin.java`, implement the merge portion of a sort join (assume the inputs are already sorted). Assume that there cannot exist duplicate keys in either input (e.g. two 1's in left input). The tiny and small tests will pass as they have no duplicates. (Test file: `TestMergeJoin.java`) (10 marks) 
 
 - BONUS: For `MergeJoin`, implement a strategy to buffer input from the left side if there are multiple tuples with the same key on the right side in order to complete all the joins. Do not buffer the whole file. Only buffer records that have the same join key. (Test file: `TestMergeJoinBonus.java`) (10 marks)
 
