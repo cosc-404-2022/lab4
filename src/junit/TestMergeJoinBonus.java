@@ -20,7 +20,7 @@ import textdb.TextFileScan;
 public class TestMergeJoinBonus {
 
 	// Change this if needed to indicate where the data and output directories are.
-	public static String DATA_DIR = "bin/data/"; 
+	public static String DATA_DIR = "bin/data/";
 	public static String OUTPUT_DIR = "bin/output/";
 
 	private static Relation r;
