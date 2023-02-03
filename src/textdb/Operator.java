@@ -45,6 +45,9 @@ public abstract class Operator {
 
 	abstract public Tuple next() throws IOException;
 
+	/*
+	 * Note: Do NOT assume all operators implement hasNext().
+	 */
 	public boolean hasNext() throws IOException {
 		return false;
 	}
@@ -54,8 +57,8 @@ public abstract class Operator {
 			input[i].close();
 	}
 
-	public boolean isBuffered() // By default, operators are not buffered/threaded
-	{
+	// By default, operators are not buffered/threaded
+	public boolean isBuffered() {
 		return false;
 	}
 	
@@ -102,11 +105,11 @@ public abstract class Operator {
 
 	protected void incrementTupleIOs(int i) {
 		internalTupleIOs += i;
-		/* System.out.println("Tuples output: "+internalTupleIOs); */}
+	}
 
 	protected void incrementPageIOs(int i) {
 		internalPageIOs += i;
-		/* System.out.println("Pages output: "+internalPageIOs); */}
+	}
 
 	public int getTuplesOutput() {
 		return tuplesOutput;
