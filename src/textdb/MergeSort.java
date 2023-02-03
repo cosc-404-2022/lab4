@@ -8,8 +8,7 @@ import java.util.Arrays;
 /**
  * An iterator performing a two-pass external merge sort. Note that REQUIRES input iterator to support hasNext() method.
  */
-public class MergeSort extends Operator
-{
+public class MergeSort extends Operator {
 	private Tuple[] buffer;							// Dynamic buffer of tuples (set when MergeSort is initialized)
 	private int arraySize;							// Size of buffer array in tuples
 	private BufferedOutputStream outFile;			// Writer for output file
