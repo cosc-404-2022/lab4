@@ -85,11 +85,11 @@ public abstract class Operator {
 
 	protected void incrementTupleIOs() {
 		internalTupleIOs++;
-		/* System.out.println("Tuples output: "+internalTupleIOs); */}
+	}
 
 	protected void incrementPageIOs() {
 		internalPageIOs++;
-		/* System.out.println("Pages output: "+internalPageIOs); */}
+	}
 
 	protected void incrementTuplesRead(int i) {
 		tuplesRead += i;
