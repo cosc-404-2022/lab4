@@ -97,7 +97,5 @@
 105488 193 0 0  thisisatuple  
 49817 195 0 0  thisisatuple  
 404560 197 0 0  thisisatuple  
-228935 201 0 0  thisisatuple  
-228935 203 0 0 thisisatuple  
-228935 205 0 0  thisisatuple  
+228935	201	0	0	thisisatuple	
 0 207 0 0  thisisatuple  
